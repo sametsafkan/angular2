@@ -24,10 +24,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 deneme.prototype.click = function () {
                     alert("Hello World!");
                 };
+                deneme.prototype.click2 = function () {
+                    alert("Hello World222!");
+                };
                 deneme = __decorate([
                     core_1.Component({
                         selector: "example",
-                        template: "<div><h1>M. Samet SAFKAN</h1></div><br><input type=\"text\" [(ngModel)]=\"model\" placeholder = \"Metin Girin\"/>{{model}}\n    <br><button (click)=\"click()\">TIKLA</button>"
+                        template: "<div><h1>M. Samet SAFKAN</h1></div><br>\n               <input type=\"text\" [(ngModel)]=\"model\" placeholder = \"Metin Girin\"/>{{model}}<br>\n               <button (click)=\"click()\">TIKLA</button><br>\n               <input type=\"text\" (keyup.enter)=\"click2()\"/>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], deneme);
