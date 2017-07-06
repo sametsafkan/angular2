@@ -11,33 +11,30 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AppComponent;
+    var deneme;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
-                    //kodlar fonksiyonlar burda 
-                    this.value = 1234;
+            deneme = (function () {
+                function deneme() {
                 }
-                AppComponent.prototype.click = function () {
-                    alert('Hello World');
+                deneme.prototype.click = function () {
+                    alert("Hello World!");
                 };
-                AppComponent = __decorate([
+                deneme = __decorate([
                     core_1.Component({
-                        //html ler burda
-                        selector: 'my-app',
-                        template: '<h1>Angular 2 Example</h1><br><button>Tıkla</button>{{value}}'
+                        selector: "example",
+                        template: "<div><h1>M. Samet SAFKAN</h1></div><br><input type=\"text\" [(ngModel)]=\"model\" placeholder = \"Metin Girin\"/>{{model}}\n    <br><button (click)=\"click()\">TIKLA</button>"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], deneme);
+                return deneme;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("deneme", deneme);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=deneme.js.map
