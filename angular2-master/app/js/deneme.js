@@ -21,8 +21,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             deneme = (function () {
                 function deneme() {
                 }
-                deneme.prototype.click = function () {
-                    alert("Hello World!");
+                deneme.prototype.click = function (text) {
+                    alert(text);
                 };
                 deneme.prototype.click2 = function () {
                     alert("Hello World222!");
@@ -30,7 +30,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 deneme = __decorate([
                     core_1.Component({
                         selector: "example",
-                        template: "<div><h1>M. Samet SAFKAN</h1></div><br>\n               <input type=\"text\" [(ngModel)]=\"model\" placeholder = \"Metin Girin\"/>{{model}}<br>\n               <button (click)=\"click()\">TIKLA</button><br>\n               <input type=\"text\" (keyup.enter)=\"click2()\"/>"
+                        template: "<div><h1>M. Samet SAFKAN</h1></div><br>\n               <input type=\"text\" [(ngModel)]=\"model\" placeholder = \"Metin Girin\"/>{{model}}<br>\n               <button (click)=\"click(model)\">TIKLA</button><br>\n               <input type=\"text\" (keyup.enter)=\"click2()\"/>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], deneme);
